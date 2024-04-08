@@ -1,0 +1,1 @@
+ssh-copy-id -o StrictHostKeyChecking=no -i "/Users/arslankhan/.ssh/id_rsa.pub" -p 30087 lab-user@ssh.ocpvdev01.dal10.infra.demo.redhat.com 

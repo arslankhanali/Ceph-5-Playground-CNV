@@ -1,0 +1,84 @@
+{
+    "id": "3e86ba48-4b39-40d8-8a37-c18ee7e2e4a1",
+    "name": "lahore",
+    "api_name": "lahore",
+    "is_master": "true",
+    "endpoints": [
+        "192.168.99.64"
+    ],
+    "hostnames": [],
+    "hostnames_s3website": [],
+    "master_zone": "ac867f65-baa2-4066-81b5-2fba862a605c",
+    "zones": [
+        {
+            "id": "4e2fa784-1497-45b9-9713-7234db67716c",
+            "name": "west",
+            "endpoints": [
+                "192.168.99.61"
+            ],
+            "log_meta": "false",
+            "log_data": "true",
+            "bucket_index_max_shards": 11,
+            "read_only": "false",
+            "tier_type": "",
+            "sync_from_all": "true",
+            "sync_from": [],
+            "redirect_zone": "",
+            "supported_features": [
+                "compress-encrypted",
+                "resharding"
+            ]
+        },
+        {
+            "id": "ac867f65-baa2-4066-81b5-2fba862a605c",
+            "name": "east",
+            "endpoints": [
+                "192.168.99.64"
+            ],
+            "log_meta": "false",
+            "log_data": "true",
+            "bucket_index_max_shards": 11,
+            "read_only": "false",
+            "tier_type": "",
+            "sync_from_all": "true",
+            "sync_from": [],
+            "redirect_zone": "",
+            "supported_features": [
+                "compress-encrypted",
+                "resharding"
+            ]
+        }
+    ],
+    "placement_targets": [
+        {
+            "name": "default-placement",
+            "tags": [],
+            "storage_classes": [
+                "STANDARD"
+            ]
+        },
+        {
+            "name": "ec-placement",
+            "tags": [],
+            "storage_classes": [
+                "STANDARD"
+            ]
+        },
+        {
+            "name": "r-placement",
+            "tags": [],
+            "storage_classes": [
+                "STANDARD"
+            ]
+        }
+    ],
+    "default_placement": "default-placement",
+    "realm_id": "0cde1c97-a709-4600-98bf-662e279d776e",
+    "sync_policy": {
+        "groups": []
+    },
+    "enabled_features": [
+        "compress-encrypted",
+        "resharding"
+    ]
+}

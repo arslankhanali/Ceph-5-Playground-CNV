@@ -1,0 +1,39 @@
+{
+    "id": "ac867f65-baa2-4066-81b5-2fba862a605c",
+    "name": "east",
+    "domain_root": "east.rgw.meta:root",
+    "control_pool": "east.rgw.control",
+    "gc_pool": "east.rgw.log:gc",
+    "lc_pool": "east.rgw.log:lc",
+    "log_pool": "east.rgw.log",
+    "intent_log_pool": "east.rgw.log:intent",
+    "usage_log_pool": "east.rgw.log:usage",
+    "roles_pool": "east.rgw.meta:roles",
+    "reshard_pool": "east.rgw.log:reshard",
+    "user_keys_pool": "east.rgw.meta:users.keys",
+    "user_email_pool": "east.rgw.meta:users.email",
+    "user_swift_pool": "east.rgw.meta:users.swift",
+    "user_uid_pool": "east.rgw.meta:users.uid",
+    "otp_pool": "east.rgw.otp",
+    "system_key": {
+        "access_key": "CSKC8ICEG33XP6TIWHQO",
+        "secret_key": "NOTAREALSECRET"
+    },
+    "placement_pools": [
+        {
+            "key": "default-placement",
+            "val": {
+                "index_pool": "east.rgw.buckets.index",
+                "storage_classes": {
+                    "STANDARD": {
+                        "data_pool": "east.rgw.buckets.data"
+                    }
+                },
+                "data_extra_pool": "east.rgw.buckets.non-ec",
+                "index_type": 0
+            }
+        }
+    ],
+    "realm_id": "0cde1c97-a709-4600-98bf-662e279d776e",
+    "notif_pool": "east.rgw.log:notif"
+}
